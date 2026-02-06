@@ -2,7 +2,9 @@ import os
 from telegram import Update
 from telegram.ext import Application, MessageHandler, ContextTypes, filters
 
-TOKEN = os.getenv("8502314659:AAEU9BZsepeZyjsOQXf8gTY8pNpx30QTtGo")
+TOKEN = os.getenv("BOT_TOKEN")
+if not TOKEN:
+    raise ValueError("BOT_TOKEN 没有设置，请检查 Railway Variables")
 USERNAME = "JJ_367"   # 你的Telegram用户名
 REPLY = "please wait a moment ❤️"
 
