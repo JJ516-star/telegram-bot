@@ -24,3 +24,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+print("BOT_TOKEN set?", bool(TOKEN), "len=", 0 if not TOKEN else len(TOKEN))
