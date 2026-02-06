@@ -4,7 +4,8 @@ from telegram.ext import Application, MessageHandler, ContextTypes, filters
 
 TOKEN = os.getenv("BOT_TOKEN")
 if not TOKEN:
-    raise ValueError("BOT_TOKEN 没有设置，请检查 Railway Variables")
+    print("❌ 没读到 BOT_TOKEN，请检查 Railway 变量")
+    exit(1)
 USERNAME = "JJ_367"   # 你的Telegram用户名
 REPLY = "please wait a moment ❤️"
 
